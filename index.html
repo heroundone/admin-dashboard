@@ -5,7 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='./normalize.css' rel='stylesheet'>
-    <link href='./index.css' rel='stylesheet'>
+    <link href='./output.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        #mainContent {
+            font-family: 'Roboto', sans-serif;
+        }
+        #sidebar {
+            font-family: 'Gideon Roman', sans-serif;
+        }
+
+        #header {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #sidebar div:nth-child(1) {
+            font-size: large;
+        }
+    </style>
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -13,21 +32,21 @@
         <div id="header">
             <div id="topRow">
                 <div>
-                    <span>SVG</span>
+                    <span><img src="./assets/magnify.svg" alt="search"></span>
                     <input type="search" size="60">
                 </div>
                 <div>
-                    <span>Bell</span>
-                    <span>Avatar</span>
-                    <p>Username</p>
+                    <span><img src="./assets/bell.svg" alt="notification"></span>
+                    <span><img src="./assets/avatar-svgrepo-com.svg" alt="user avatar"></span>
+                    <p>John Law</p>
                 </div>
             </div>
             <div id="bottomRow">
                 <div>
-                    <span>B.Avatar</span>
+                    <span><img src="./assets/avatar-svgrepo-com.svg" alt="user avatar"></span>
                     <span id="greeting">
                         <p>Hi there,</p>
-                        <p>Beep Boop(@Boop)</p>
+                        <p>John Law(@LongJohn)</p>
                     </span>
                 </div>
                 <div>
@@ -40,60 +59,192 @@
         <div id="sidebar">
             <div class="nav">
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/dashboard.svg" alt="dashboard"></span>
+                    <span class="navText">Dashboard</span>
                 </div>
             </div>
             <div class="nav">
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/home.svg" alt="home"></span>
+                    <span class="navText">Home</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/account-box.svg" alt="profile"></span>
+                    <span class="navText">Profile</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/message.svg" alt="message"></span>
+                    <span class="navText">Messages</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/history.svg" alt="history"></span>
+                    <span class="navText">History</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/calendar-month-outline.svg" alt="tasks"></span>
+                    <span class="navText">Tasks</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/account-group.svg" alt="communities"></span>
+                    <span class="navText">Communities</span>
                 </div>
             </div>
             <div class="nav">
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/cog.svg" alt="settings"></span>
+                    <span class="navText">Settings</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/help-circle.svg" alt="support"></span>
+                    <span class="navText">Support</span>
                 </div>
                 <div class="navLink">
-                    <span class="icon">N</span>
-                    <span class="navText">hello</span>
+                    <span class="icon"><img src="./assets/security.svg" alt="privacy"></span>
+                    <span class="navText">Privacy</span>
                 </div>
             </div>
         </div>
         <div id="mainContent">
             <div id="projects">
+                <div class="title">
+                    Your Projects
+                </div>
+                <div class="empty">
+
+                </div>
+                <div class="card">
+                    <div class="cardText">
+                        <span>Title of Project</span>
+                        <span>a long-winded description of said project that is entirely too long and drones on and on and on, for it will 
+                            never stop once it has begun
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <span><img src="./assets/star-plus-outline.svg" alt="favorite"></span>
+                        <span><img src="./assets/eye-plus-outline.svg" alt="monitor"></span>
+                        <span><img src="./assets/link.svg" alt="share"></span>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="cardText">
+                        <span>Title of Project</span>
+                        <span>a long-winded description of said project that is entirely too long and drones on and on and on, for it will 
+                            never stop once it has begun
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <span><img src="./assets/star-plus-outline.svg" alt="favorite"></span>
+                        <span><img src="./assets/eye-plus-outline.svg" alt="monitor"></span>
+                        <span><img src="./assets/link.svg" alt="share"></span>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="cardText">
+                        <span>Title of Project</span>
+                        <span>a long-winded description of said project that is entirely too long and drones on and on and on, for it will 
+                            never stop once it has begun
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <span><img src="./assets/star-plus-outline.svg" alt="favorite"></span>
+                        <span><img src="./assets/eye-plus-outline.svg" alt="monitor"></span>
+                        <span><img src="./assets/link.svg" alt="share"></span>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="cardText">
+                        <span>Title of Project</span>
+                        <span>a long-winded description of said project that is entirely too long and drones on and on and on, for it will 
+                            never stop once it has begun
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <span><img src="./assets/star-plus-outline.svg" alt="favorite"></span>
+                        <span><img src="./assets/eye-plus-outline.svg" alt="monitor"></span>
+                        <span><img src="./assets/link.svg" alt="share"></span>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="cardText">
+                        <span>Title of Project</span>
+                        <span>a long-winded description of said project that is entirely too long and drones on and on and on, for it will 
+                            never stop once it has begun
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <span><img src="./assets/star-plus-outline.svg" alt="favorite"></span>
+                        <span><img src="./assets/eye-plus-outline.svg" alt="monitor"></span>
+                        <span><img src="./assets/link.svg" alt="share"></span>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="cardText">
+                        <span>Title of Project</span>
+                        <span>a long-winded description of said project that is entirely too long and drones on and on and on, for it will 
+                            never stop once it has begun
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <span><img src="./assets/star-plus-outline.svg" alt="favorite"></span>
+                        <span><img src="./assets/eye-plus-outline.svg" alt="monitor"></span>
+                        <span><img src="./assets/link.svg" alt="share"></span>
+                    </div>
+                </div>
 
             </div>
             <div id="announcements">
-
+                <div class="title">Announcements</div>
+                <div id="announcementCards">
+                    <div class="announcementCard">
+                        <p>Site Maintenance</p>
+                        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div style="border-bottom: .5px solid black; height: .01px; margin: 0px 15px;"></div>
+                    <div class="announcementCard">
+                        <p>Share Day</p>
+                        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div style="border-bottom: .5px solid black; height: .01px; margin: 0px 15px;"></div>
+                    <div class="announcementCard">
+                        <p>Privacy Policy</p>
+                        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
             </div>
             <div id="trending">
-                
+                <div class="title">
+                    Trending
+                </div>
+                <div id="trendingContainer">
+                    <div>
+                        <span><img src="./assets/avatar-svgrepo-com (1).svg" alt="another avatar"></span>
+                        <span>
+                            <span>@MadameMarie</span>
+                            <span>Maude Mercurio</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span><img src="./assets/avatar-svgrepo-com (2).svg" alt="another avatar"></span>
+                        <span>
+                            <span>@Blithering</span>
+                            <span>Danielle Blath</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span><img src="./assets/avatar-svgrepo-com (3).svg" alt="another avatar"></span>
+                        <span>
+                            <span>@Suave&Suavier</span>
+                            <span>Sebastian Suave</span>
+                        </span>
+                    </div>
+                    <div>
+                        <span><img src="./assets/avatar-svgrepo-com.svg" alt="user"></span>
+                        <span>
+                            <span>@LongJohn</span>
+                            <span>John Law</span>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
